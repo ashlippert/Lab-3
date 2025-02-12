@@ -9,47 +9,56 @@ Ashlyn Lippert and Seth Daniel
 February 17th, 2025
 
 ## Introduction
-   The goal of this project was to analyze electrical circuits by applying fundamental circuit laws, including Kirchhoff’s Voltage Law (KVL), Kirchhoff’s Current Law (KCL), and Ohm’s Law. The analysis also incorporated Thevenin’s and Norton’s theorems, along with the superposition principle, to simplify complex circuit calculations. Additionally, the project required hands-on circuit assembly and soldering, reinforcing practical skills essential for electrical and electronic work.
-   As part of this project, a series circuit was soldered and a prototype parallel circuit was assembled to experimentally verify theoretical principles. Measurements of voltage and current were taken using appropriate instruments, and the collected data was compared against theoretical predictions based on circuit laws. The soldering process provided valuable hands-on experience, highlighting the importance of precision in electronic assembly. Overall, the project enhanced both theoretical understanding and practical skills in electrical circuit analysis.
+   Transistors are essential in modern electronics, with Bipolar Junction Transistors (BJTs) commonly used for amplification and switching. This lab focuses on understanding BJTs by using the TIP 31C transistor as a switch to control current through an LED and a motor. We will explore its different operating modes and how factors like gain (β) affect performance.
+
+Additionally, we will examine diodes, which allow current to flow in one direction, and LEDs, which emit light when current passes through them. This lab provides hands-on experience with semiconductor devices and their applications in circuit design.
 
 ## Materials
-1. Soldering station
-2. Solder Protoboard
-3. Small piece of solder
-4. Resistors: 1kΩ, 2.2 kΩ, 2.2 kΩ, 5.1 kΩ, 4.7 kΩ, 6.8 kΩ, 15 kΩ, 220 kΩ
-5. DC Power Supply (DCPS)
-6. Fluke 87 V DMM
-7. Wire trimmers
-8. Breadboard
-9. Additional wires
+1. Resistors: 1kΩ, 2.2 Ω, 270 Ω, 1 kΩ
+2. DC Power Supply (DCPS)
+3. Fluke 87 V DMM
+4. A NTE 125 Diode
+5. Additional wires
+6. A sliding switch (from the Sparkfun inventor’s kit)
+7. An electric motor (from the Sparkfun inventor's kit)
+8. A 1kΩ trimmer potentiometer
+9. A TIP31C transistor
+10. A LED
 
 ## Assembly Methods
 
-**Objective 1: Learn soldering techniques by building a simple circuit on a solder protoboards**
+**Objective: Learn to use Diodes, LEDs, and transistors in a basic circuit**
 
-1. **Series Circuit Assembly:**
-   
-   The circuit constructed for this portion of the lab is described by the following schematic in Figure 1. The 1kΩ (R1), 2.2kΩ (R2), and 5.1kΩ (R3) resistors were placed in series on the protoboard, then the leads of the resistors were trimmed down using wire cutters and folded against the protoboard. Be sure to verify the resistor values using the DMM before soldering any resistors into the protoboard.
+1. **Measuring Resistors**  
+The actual resistance values of the resistors used in the circuits were measured with the DMM and recorded in a table before assembly. This was done to ensure each resistor was in tolerance range.
+
+2. **LED Directly Connected to a Switch**
+
+The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor, using only components with known resistance.  
 
 <div align= "center">
 <img src="https://github.com/user-attachments/assets/ba343305-14bd-413f-810b-dd71efa915af" alt "Schematic 1" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Schematic describing the series resistor circuit built for part 1 of this lab. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Schematic describing the LED switch circuit built for part 1 of this lab. </figcaption>
 </div>
 
 <br>
 
-   Once the circuit was verified to be correct, we used the soldering station set to 640 degrees to solder the resistors to the protoboard. The soldering technique we used can be described by the following diagram from Techspray.
+   The circuit created using this schematic should resemble what is shown in Figure 2 below.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/e18bd5aa-c633-454e-9cf7-5fa1ff410287" alt "Technique for Soldering" width="400"/>
+<img src="https://github.com/user-attachments/assets/e18bd5aa-c633-454e-9cf7-5fa1ff410287" alt "Circuit 1" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Soldering Technique used by our lab group to solder the series circuit. Retrieved from TechSpray. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed circuit from Schematic 1. </figcaption>
 </div>
 
 <br>
 
-   The resistors were soldered by placing the soldering iron on the designated solder point, then after a couple seconds, introducing the solder material to the same point. Once the solder is liquefied, the iron was used to ensure the solder is in the appropriate location and covering the resistor leads. The same process was used for each resistor lead. Each partner performed 3 resistor lead solders on the protoboard. Additionally, one end of two separate wires were soldered to the terminals of R1 and R3 for DCPS connection. The finished soldered series circuit is provided in the figure below. 
+3. **LED Driven by a Transistor**
+
+A new circuit was built to drive the LED using a transistor using the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
+
+Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region.  
 
    <div align="center">
   <img src="https://github.com/user-attachments/assets/413cc0c5-ea1c-4aa9-a10b-b0bfe5e35836" alt="Top View of Soldered Series Circuit" width="400"/>
@@ -57,7 +66,17 @@ February 17th, 2025
   <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Top view of soldered series resistor circuit. </figcaption>
 </div>
 
+   When constructed, the circuit assembled using Schematic 2 should resemble the following image.
+
+   <div align="center">
+  <img src="https://github.com/user-attachments/assets/413cc0c5-ea1c-4aa9-a10b-b0bfe5e35836" alt="Top View of Soldered Series Circuit" width="400"/>
 <br>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Top view of soldered series resistor circuit. </figcaption>
+</div>   
+
+<br>
+
+
 
 **Objective 2: Analyze a circuit to verify Kirchhoff’s Voltage Law (KVL) and Kirchhoff’s Current Law (KCL), and apply Thevenin’s and Superposition Theorems**
 
