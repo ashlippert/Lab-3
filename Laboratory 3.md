@@ -68,19 +68,53 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
   <figcaption style="font-size: 16px; text-align: center;"> Figure 3: LED driven by transistor with a fixed current schematic. </figcaption>
 </div>
 
-   When constructed, the circuit assembled using Schematic 2 should resemble the following image.
+<br>
+
+   When constructed, the circuit assembled using Schematic 2 should resemble Figure 4.
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/413cc0c5-ea1c-4aa9-a10b-b0bfe5e35836" alt="Top View of Soldered Series Circuit" width="400"/>
+  <img src="https://github.com/user-attachments/assets/b27a382b-d199-46e4-ab95-33ba3357b6cb" alt="Circuit 2" width="400"/>
 <br>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Top view of soldered series resistor circuit. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Constructed circuit from Schematic 2. </figcaption>
 </div>   
 
+
+<br>
+
+4. **LED Current Controlled Using a Transistor**
+
+   A potentiometer is introduced to control the base current of the transistor, effectively modulating the LED brightness. By adjusting the resistance, the base current changes, influencing the collector current and thus the LED’s brightness. This circuit demonstrates how transistors can be used for more than just on-off switching, they can also provide variable control.
+
+   The schematic for constructing this circuit is provided in Figure 5 below.
+
+
+   <div align="center">
+  <img src="https://github.com/user-attachments/assets/5ecb04b3-15b5-48c6-80de-66bd0e2c849e" alt="Schematic 3" width="400"/>
+<br>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Controlling LED current using a transistor schematic. </figcaption>
+</div>
+
+
 <br>
 
 
+   When constructed, the circuit assembled using Schematic 3 should resemble Figure 6.
+   
+<br>
 
-**Objective 2: Analyze a circuit to verify Kirchhoff’s Voltage Law (KVL) and Kirchhoff’s Current Law (KCL), and apply Thevenin’s and Superposition Theorems**
+   <div align="center">
+  <img src="https://github.com/user-attachments/assets/bc90ff37-7256-42cf-8f9a-e65b8f2679be" alt="Circuit 3" width="400"/>
+      
+<br>
+
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Constructed circuit from Schematic 3. </figcaption>
+</div>   
+
+
+<br>
+
+
+**Objective 2: Motor Driven Circuit**
 
 
 1. **Series Circuit**
@@ -114,6 +148,7 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
   <p><b>Figure 6:</b> Thevenin equivalent circuit schematic.</p>
 
 </div>
+
 
    When assembled, the Thevenin circuit should resemble the image below.
 
