@@ -19,11 +19,12 @@ February 17th, 2025
 3. Fluke 87 V DMM
 4. A NTE 125 Diode
 5. Additional wires
-6. A sliding switch (from the Sparkfun inventor’s kit)
+6. A designated "switch" wire
 7. An electric motor (from the Sparkfun inventor's kit)
 8. A 1kΩ trimmer potentiometer
 9. A TIP31C transistor
 10. A LED
+11. Flathead screwdriver
 
 ## Assembly Methods
 
@@ -31,7 +32,7 @@ February 17th, 2025
 
 1. **LED Directly Connected to a Switch**
 
-   The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
+   The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance. For this circuit, the sliding switch was replaced by a wire, where when one end was disconnected the switch was "OFF" and with both ends connected the switch is "ON".
 
 <div align= "center">
 <img src="https://github.com/user-attachments/assets/ae1d075f-1e65-430c-be60-8a4bf0e01eb2" alt "Schematic 1" width="200"/>
@@ -55,7 +56,7 @@ February 17th, 2025
 
    A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
 
-   Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region. The schematic for constructing this circuit is shown in Figure 3.
+   Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region. The schematic for constructing this circuit is shown in Figure 3. The wire switch was also used for this circuit in place of a sliding switch.
 
 
 <div align="center">
@@ -191,7 +192,7 @@ February 17th, 2025
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ff4316f2-4f2a-442a-a28a-cd46efaa3b5c" alt="Measuring Voltage Across" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 9: Measuring voltage across a resistor using the DMM. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 10: Adjusting the potentiometer voltage output. </figcaption>
 </div>
 
    For each potentiometer setting, measure the voltage at each test point and the voltage across each component (R1, LED, R2). Try to measure as close to the resistor terminal as possible to avoid any small voltage drops. Record all values in the table.
@@ -206,51 +207,84 @@ February 17th, 2025
    
 ## Test Results:
 
-**Table 1: Resistor Values for Soldered Circuit (Schematic 1)**
+**Table 1: Resistor Values**
 
-| Resistor # | Band 1 | Band 2 | Band 3 | Band 4 | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
-|------------|--------|--------|--------|--------|----------------------------|-----------|----------------------|------------------|----------------------------|
-| 1          | Brown  | Black  | Red    |        | 1000                       |           | 1000                 | 1000             | 991                        |
-| 2          | Red    | Red    | Red    | Gold   | 2200                       | 5%        | 2310                 | 2090            | 2160                        |
-| 3          | Green  | Brown  | Red    | Gold   | 5100                       | 5%        | 5355                 | 4845            | 4970                        |
+| Resistor # | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
+|------------|----------------------------|-----------|------------------|------------------|----------------------------|
+| 1          | 2.2                        | 5%        | 2.31             | 2.09             | 2.24                        |
+| 2          | 270                        | 5%        | 283.5            | 256.5            | 268.9                       |
+| 3          | 1000                       | 5%        | 1050             | 950              | 984                         |
+
+**Table 2: DCPS Voltage Verification**
+| Expected DCPS Voltage Output (V) | Measured Voltage with DMM (V) |
+|----------------------------------|-------------------------------|
+| 5                                | 5.01                          |
+
+**Table 3: LED Directly Controlled by a Switc**
+
+| Test Point | Voltage (Switch On) | Voltage (Switch Off) |
+|------------|---------------------|----------------------|
+| T2         | TBD                 | TBD                  |
+| T3         | TBD                 | TBD                  |
+
+| Component | Voltage Across (Switch On) | Voltage Across (Switch Off) |
+|-----------|----------------------------|-----------------------------|
+| R1        | TBD                        | TBD                         |
+| LED1      | TBD                        | TBD                         |
+| S1        | TBD                        | TBD                         |
+
+| Component | Current Through (Switch On) | Current Through (Switch Off) |
+|-----------|-----------------------------|------------------------------|
+| LED1      | TBD                         | TBD                          |
+
+**Table 4: LED Controlled by a Transistor**
+
+| Test Point | Voltage (Switch On) | Voltage (Switch Off) |
+|------------|---------------------|----------------------|
+| T2         | TBD                 | TBD                  |
+| T3 (VCE)   | TBD                 | TBD                  |
+| T5 (VBE)   | TBD                 | TBD                  |
+| T6         | TBD                 | TBD                  |
+
+| Component | Voltage Across (Switch On) | Voltage Across (Switch Off) |
+|-----------|----------------------------|-----------------------------|
+| R1        | TBD                        | TBD                         |
+| LED1      | TBD                        | TBD                         |
+| R2        | TBD                        | TBD                         |
+| S1        | TBD                        | TBD                         |
+
+| Component | Current Through (Switch On) | Current Through (Switch Off) |
+|-----------|-----------------------------|------------------------------|
+| LED1 (IC) | TBD                         | TBD                          |
+| R2 (IB)   | TBD                         | TBD                          |
 
 
-**Table 2: Resistor Values for Schematics 2 and 3**
+**Table 5: Adjusting LED Brightness with a Transistor**
 
-| Resistor # | Band 1 | Band 2 | Band 3 | Band 4 | Expected Resistance (Ohms) | Tolerance | Max Value (Ohms) | Min Value (Ohms) | Measured Resistance (Ohms) |
-|------------|--------|--------|--------|--------|----------------------------|-----------|------------------|------------------|----------------------------|
-| 1          | Yellow | Purple | Red    | Gold   | 4700                       | 5%        | 4935             | 4465             | 4555                       |
-| 2          | Blue   | Grey   | Red    | Gold   | 6800                       | 5%        | 7140             | 6460             | 6946                       |
-| 3          | Brown  | Green  | Orange | Gold   | 15000                      | 5%        | 15750            | 14250            | 15240                      |
-| 4          | Red    | Red    | Red    | Gold   | 2200                       | 5%        | 2310             | 2090             | 2282                        |
+| Test Point | Dim LED | Midpoint 1 | Midpoint 2 | Bright LED |
+|------------|---------|------------|------------|------------|
+| T2         | TBD     | TBD        | TBD        | TBD        |
+| T3 (VCE)   | TBD     | TBD        | TBD        | TBD        |
+| T5 (VBE)   | TBD     | TBD        | TBD        | TBD        |
+| T6         | TBD     | TBD        | TBD        | TBD        |
 
-**Table 3: Power Supply Voltage Verification**
-
-| Expected Current from DCPS (A) | Expected Voltage from DCPS (V) | DMM Voltage Measurement (V) |
-|--------------------------------|--------------------------------|-----------------------------|
-| 0                              | 10                             | 9.99                        |
-| 0                              | 12                             | 12                          |
-
-
-**Table 4: Measured Currents for KCL Circuit (Part 2.1)**
-
-|   Current Label   |  Measured Value (A)  |
-|-------------------|----------------------|
-| I1                | 0.00182              | 
-| I 2/3             | 0.00182              | 
-| I4                | 0.0000445            | 
-| I5/IL             | 0.00164              |
+| Component  | Dim LED | Midpoint 1 | Midpoint 2 | Bright LED |
+|------------|---------|------------|------------|------------|
+| T2         | TBD     | TBD        | TBD        | TBD        |
+| T3 (VCE)   | TBD     | TBD        | TBD        | TBD        |
+| T5 (VBE)   | TBD     | TBD        | TBD        | TBD        |
+| T6         | TBD     | TBD        | TBD        | TBD        |
 
 
-**Table 4: Voltage Comparisons for KVL Circuit (Part 2.2)**
+**Table 6: Motor Speed Control Using a Transistor**
 
-| Voltage | Measured Magnitude (V) | Calculated Voltages (V) |
-|---------|------------------------|-------------------------|
-| V1      | 8.44                   | 8.29                    |
-| V2      | 1.1                    | 12.64                   |
-| V3      | 2.45                   | 27.73                   |
-| V4      | 9.68                   | 9.5                     |
-| V5      | 3.55                   | 3.742                   |
+| Test Point | Slow Motor | Midpoint 1 | Midpoint 2 | Fast Motor |
+|------------|------------|------------|------------|------------|
+| T2         | TBD        | TBD        | TBD        | TBD        |
+| T3 (VCE)   | TBD        | TBD        | TBD        | TBD        |
+| T5 (VBE)   | TBD        | TBD        | TBD        | TBD        |
+| T6         | TBD        | TBD        | TBD        | TBD        |
+
 
 ## Discussion:
 
