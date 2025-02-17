@@ -47,11 +47,10 @@ The circuit was constructed according to the schematic in Figure 1. Voltages wer
    The circuit created using this schematic should resemble what is shown in Figure 2 below.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/f391576a-ee90-4666-adb2-90ed7966ed0a" alt "Circuit 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/c80a1233-a255-454c-b93a-becd8e07ac8d" alt "Circuit 1" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed circuit from Schematic 1. </figcaption>
 </div>
-
 
 <br>
 
@@ -73,7 +72,7 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
    When constructed, the circuit assembled using Schematic 2 should resemble Figure 4.
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/b27a382b-d199-46e4-ab95-33ba3357b6cb" alt="Circuit 2" width="400"/>
+  <img src="https://github.com/user-attachments/assets/dd238a1d-5742-4368-ac3d-01adf5b8a011" alt="Circuit 2" width="400"/>
 <br>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Constructed circuit from Schematic 2. </figcaption>
 </div>   
@@ -103,7 +102,7 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
 <br>
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/bc90ff37-7256-42cf-8f9a-e65b8f2679be" alt="Circuit 3" width="400"/>
+  <img src="https://github.com/user-attachments/assets/bec652ae-ac6a-41b0-a8bb-6392b9a5ce85" alt="Circuit 3" width="400"/>
       
 <br>
 
