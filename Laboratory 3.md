@@ -222,112 +222,88 @@ February 17th, 2025
 
 **Table 3: LED Directly Controlled by a Switc**
 
-| Test Point | Voltage (Switch On) | Voltage (Switch Off) |
-|------------|---------------------|----------------------|
-| T2         | TBD                 | TBD                  |
-| T3         | TBD                 | TBD                  |
-
-| Component | Voltage Across (Switch On) | Voltage Across (Switch Off) |
-|-----------|----------------------------|-----------------------------|
-| R1        | TBD                        | TBD                         |
-| LED1      | TBD                        | TBD                         |
-| S1        | TBD                        | TBD                         |
-
-| Component | Current Through (Switch On) | Current Through (Switch Off) |
-|-----------|-----------------------------|------------------------------|
-| LED1      | TBD                         | TBD                          |
+| Test Point |     Voltage (Switch On)     |     Voltage (Switch Off)     |
+|------------|-----------------------------|------------------------------|
+| T2         | 2.045 V                     | 0.163 V                      |
+| T3         | 0 V                         | 0  V                         |
+|------------|-----------------------------|------------------------------|
+| Component  |  Voltage Across (Switch On) |  Voltage Across (Switch Off) |
+|------------|-----------------------------|------------------------------|
+| R1         | 2.95 V                      | 0 V                          |
+| LED1       | 2.05 V                      | 0.171 V                      |
+| S1         | 0 V                         | 0 V                          |
+|------------|-----------------------------|------------------------------|
+|            | Current Through (Switch On) | Current Through (Switch Off) |
+|------------|-----------------------------|------------------------------|
+| LED1       | 0.012 A                     | 0 A                          |
 
 **Table 4: LED Controlled by a Transistor**
 
-| Test Point | Voltage (Switch On) | Voltage (Switch Off) |
-|------------|---------------------|----------------------|
-| T2         | TBD                 | TBD                  |
-| T3 (VCE)   | TBD                 | TBD                  |
-| T5 (VBE)   | TBD                 | TBD                  |
-| T6         | TBD                 | TBD                  |
-
-| Component | Voltage Across (Switch On) | Voltage Across (Switch Off) |
-|-----------|----------------------------|-----------------------------|
-| R1        | TBD                        | TBD                         |
-| LED1      | TBD                        | TBD                         |
-| R2        | TBD                        | TBD                         |
-| S1        | TBD                        | TBD                         |
-
-| Component | Current Through (Switch On) | Current Through (Switch Off) |
-|-----------|-----------------------------|------------------------------|
-| LED1 (IC) | TBD                         | TBD                          |
-| R2 (IB)   | TBD                         | TBD                          |
+| Test Point |     Voltage (Switch On)    |     Voltage (Switch Off)      |
+|------------|----------------------------|-------------------------------|
+| T2         | 2.047 V                    | 5.003 V                       |
+| T3 (VCE)   | 0.013 V                    | 3.518 V                       |
+| T5 (VBE)   | 0.682 V                    | 0.170 V                       |
+| T6         | 5 V                        | 0.135 V                       |
+|------------|----------------------------|-------------------------------|
+| Component  | Voltage Across (Switch On) |  Voltage Across (Switch Off)  |
+|------------|----------------------------|-------------------------------|
+| R1         | 2.914 V                    | 0 V                           |
+| LED1       | 2.045 V                    | 0.390 V                       |
+| R2         | 4.4 V                      | 0 V                           |
+| S1         | 0 V                        | 0 V                           |
+|------------|----------------------------|-------------------------------|
+|            | Current Through (Switch On) | Current Through (Switch Off) |
+|------------|-----------------------------|------------------------------|
+| LED1 (IC)  | 0.012 A                     | 0 A                          |
+| R2 (IB)    | 0.005 A                     | 0 A                          |
 
 
 **Table 5: Adjusting LED Brightness with a Transistor**
 
-| Test Point | Dim LED | Midpoint 1 | Midpoint 2 | Bright LED |
-|------------|---------|------------|------------|------------|
-| T2         | TBD     | TBD        | TBD        | TBD        |
-| T3 (VCE)   | TBD     | TBD        | TBD        | TBD        |
-| T5 (VBE)   | TBD     | TBD        | TBD        | TBD        |
-| T6         | TBD     | TBD        | TBD        | TBD        |
-
-| Component  | Dim LED | Midpoint 1 | Midpoint 2 | Bright LED |
-|------------|---------|------------|------------|------------|
-| T2         | TBD     | TBD        | TBD        | TBD        |
-| T3 (VCE)   | TBD     | TBD        | TBD        | TBD        |
-| T5 (VBE)   | TBD     | TBD        | TBD        | TBD        |
-| T6         | TBD     | TBD        | TBD        | TBD        |
-
+|  Test Point |     Dim LED Voltage    |     Midpoint 1 Voltage    |     Midpoint 2 Voltage    |     Bright LED Voltage    |
+|-------------|------------------------|---------------------------|---------------------------|---------------------------|
+| T2          | 4.97 V                 | 4.86 V                    | 2.62 V                    | 2.057 V                   |
+| T3 (VCE)    | 3.26 V                 | 3.063 V                   | 0.530 V                   | 0.011 V                   |
+| T5 (VBE)    | 0.459 V                | 0.515 V                   | 0.592 V                   | 0.683 V                   |
+| T6          | 0.459 V                | 0.518 V                   | 0.625 V                   | 4.992 V                   |
+|-------------|------------------------|---------------------------|---------------------------|---------------------------|
+|  Component  | Voltage Across Dim LED | Voltage Across Midpoint 1 | Voltage Across Midpoint 2 | Voltage Across Bright LED |
+|-------------|------------------------|---------------------------|---------------------------|---------------------------|
+| R1          | 0.015 V                | 0.130 V                   | 2.46 V                    | 2.94 V                    |
+| LED 1       | 1.709 V                | 1.804 V                   | 2.015 V                   | 2.041 V                   |
+| R2          | 0 V                    | 0.002 V                   | 0.033 V                   | 4.309 V                   |
+|-------------|------------------------|---------------------------|---------------------------|---------------------------|
+|             | Current Through Dim LED| Current Through Midpoint 1| Current Through Midpoint 2| Current Through Bright LED|
+|-------------|------------------------|---------------------------|---------------------------|---------------------------|
+| LED (IC)    | 0.00007 A              | 0.00045 A                 | 0.00901 A                 | 0.01077 A                 |
+| R2 (IB)     | 0.00001 A              | 0.00001 A                 | 0.00004 A                 | 0.00505 A                 |
+| Gain (IC/IB)| 7                      | 45                        | 225.25                    | 2.132                     |
 
 **Table 6: Motor Speed Control Using a Transistor**
 
-| Test Point | Slow Motor | Midpoint 1 | Midpoint 2 | Fast Motor |
-|------------|------------|------------|------------|------------|
-| T2         | TBD        | TBD        | TBD        | TBD        |
-| T3 (VCE)   | TBD        | TBD        | TBD        | TBD        |
-| T5 (VBE)   | TBD        | TBD        | TBD        | TBD        |
-| T6         | TBD        | TBD        | TBD        | TBD        |
-
+|  Test Point |     Slow Motor Voltage    |     Midpoint 1 Voltage    |     Midpoint 2 Voltage    |     Fast Motor Voltage    |
+|-------------|---------------------------|---------------------------|---------------------------|---------------------------|
+| T2          | 4.825 V                   | 4.77 V                    | 4.74 V                    | 4.710 V                   |
+| T3 (VCE)    | 2.917 V                   | 1.25 V                    | 0.476 V                   | 0.125 V                   |
+| T5 (VBE)    | 0.633 V                   | 0.654 V                   | 0.669 V                   | 0.713 V                   |
+| T6          | 0.847 V                   | 0.925 V                   | 1.0 V                     | 4.960 V                   |
+|-------------|---------------------------|---------------------------|---------------------------|---------------------------|
+|  Component  | Voltage Across Slow Motor | Voltage Across Midpoint 1 | Voltage Across Midpoint 2 | Voltage Across Fast Motor |
+|-------------|---------------------------|---------------------------|---------------------------|---------------------------|
+| R1          | 0.160 V                   | 0.198 V                   | 0.215 V                   | 0.238 V                   |
+| M1          | 2.16 V                    | 3.459 V                   | 3.553 V                   | 4.6 V                     |
+| R2          | 0.215 V                   | 0.274 V                   | 0.270 V                   | 4.25 V                    |
+|-------------|---------------------------|---------------------------|---------------------------|---------------------------|
+|             | Current Through Slow Motor| Current Through Midpoint 1| Current Through Midpoint 2| Current Through Fast Motor|
+|-------------|---------------------------|---------------------------|---------------------------|---------------------------|
+| M1 (IC)     | 0.0642 A                  | 0.0815 A                  | 0.10001 A                 | 0.108 A                   |
+| R2 (IB)     | 0.00019 A                 | 0.00029 A                 | 0.00048 A                 | 0.00433 A                 |
+| Gain (IC/IB)| 337.894                   | 281.034                   | 208.354                   | 24.942                    |
 
 ## Discussion:
 
-Discussion Question 1: Are the measured currents in agreement with Kirchhoff’s Current Law?
-
-Our data does not comply with Kirchhoff’s current law. Kirchhoff’s Current Law states that the sum of currents entering a node must equal the sum of currents leaving the node.
-The total sum of branch currents exceeds I(1), which could be due to incorrect DMM settings or human errors during measurement. These issues likely also explain the discrepancies between calculated and measured voltage drop.
-
-
-Discussion Question 2: Compare the measured values and the calculated values. Are these in
-agreement with Kirchhoff’s Voltage Law?
-
-Kirchhoff’s Voltage Law states that the sum of voltage drops around a closed loop must equal the supplied voltage. From our measured voltages: V4 + V5 = 12.23V, since the input voltage is 12V, we can conclude our data complies with Kirchhoff’s voltage law (ignoring minor discrepancies due to error).
-
-Discussion Question 3: Calculate the power delivered by the power supply and the power
-dissipated by every resistor. Is the power delivered by the power supply equal to the total power
-dissipated?
-
-The power supplied by the power source should equal the total power dissipated by resistors in the circuit.
-
-Power Supplied:
-
-P = V * I = 12V * 1.82mA = 0.0218 W
-
-
-Power Dissipated by Resistors:
-
-∑ (V^2) / R = 0.0177 W
-
-
-The difference between supplied and dissipated power suggests measurement inaccuracies, most likely due to DMM misconfiguration or human errors during measurement. 
-
-
-Discussion Question 4: Using circuit analysis, calculate RTH, IN, and VTH, and compare them with
-the measured values. Are the calculated values in agreement with the measured values?
-
-| Symbol  | Measured               | Calculated              |
-|---------|------------------------|-------------------------|
-| Vth     | 9.68V                  | 9.7 V                   |
-| In      | 44.5uA                 | 43.5 uA                 |
-| Rth/Rn  | 3760Ω                  | 223000 Ω                |
-
-The values we calculated using circuit analysis and expected resistances completely agree with the measured values. Any small discrepancies can be explained by resistor tolerances.
+Seth
 
 ## Conclusion:
 
