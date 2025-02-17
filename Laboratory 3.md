@@ -37,7 +37,7 @@ The actual resistance values of the resistors used in the circuits were measured
 The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/ae1d075f-1e65-430c-be60-8a4bf0e01eb2" alt "Schematic 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/ae1d075f-1e65-430c-be60-8a4bf0e01eb2" alt "Schematic 1" width="200"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 1: Schematic describing the LED switch circuit built for part 1 of this lab. </figcaption>
 </div>
@@ -59,13 +59,13 @@ The circuit was constructed according to the schematic in Figure 1. Voltages wer
 
 A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
 
-Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region.  
+Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region. The schematic for constructing this circuit is shown in Figure 3.
 
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/413cc0c5-ea1c-4aa9-a10b-b0bfe5e35836" alt="Top View of Soldered Series Circuit" width="400"/>
+  <img src="https://github.com/user-attachments/assets/66f77f2e-4f49-4d3a-93f6-4861215dcae8" alt="Schematic 2" width="400"/>
 <br>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Top view of soldered series resistor circuit. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 3: LED driven by transistor with a fixed current schematic. </figcaption>
 </div>
 
    When constructed, the circuit assembled using Schematic 2 should resemble the following image.
