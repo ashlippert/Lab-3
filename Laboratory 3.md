@@ -9,7 +9,7 @@ Ashlyn Lippert and Seth Daniel
 February 17th, 2025
 
 ## Introduction
-   Transistors are essential in modern electronics, with Bipolar Junction Transistors (BJTs) commonly used for amplification and switching. This lab focuses on understanding BJTs by using the TIP 31C transistor as a switch to control current through an LED and a motor. We will explore its different operating modes and how factors like gain (β) affect performance.
+   Transistors are essential in modern electronics, with Bipolar Junction Transistors commonly used for amplification and switching. This lab focuses on understanding BJTs by using the TIP 31C transistor as a switch to control current through an LED and a motor. We will explore its different operating modes and how factors like gain (β) affect performance.
 
 Additionally, we will examine diodes, which allow current to flow in one direction, and LEDs, which emit light when current passes through them. This lab provides hands-on experience with semiconductor devices and their applications in circuit design.
 
@@ -34,10 +34,10 @@ The actual resistance values of the resistors used in the circuits were measured
 
 2. **LED Directly Connected to a Switch**
 
-The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor, using only components with known resistance.  
+The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/ba343305-14bd-413f-810b-dd71efa915af" alt "Schematic 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/ae1d075f-1e65-430c-be60-8a4bf0e01eb2" alt "Schematic 1" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 1: Schematic describing the LED switch circuit built for part 1 of this lab. </figcaption>
 </div>
@@ -47,18 +47,20 @@ The circuit was constructed according to the schematic in Figure 1. Voltages wer
    The circuit created using this schematic should resemble what is shown in Figure 2 below.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/e18bd5aa-c633-454e-9cf7-5fa1ff410287" alt "Circuit 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/f391576a-ee90-4666-adb2-90ed7966ed0a" alt "Circuit 1" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed circuit from Schematic 1. </figcaption>
 </div>
+
 
 <br>
 
 3. **LED Driven by a Transistor**
 
-A new circuit was built to drive the LED using a transistor using the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
+A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
 
 Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region.  
+
 
    <div align="center">
   <img src="https://github.com/user-attachments/assets/413cc0c5-ea1c-4aa9-a10b-b0bfe5e35836" alt="Top View of Soldered Series Circuit" width="400"/>
