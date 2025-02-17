@@ -104,7 +104,7 @@ February 17th, 2025
 <br>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/bec652ae-ac6a-41b0-a8bb-6392b9a5ce85" alt="Circuit 3" width="400"/>
+<img src="https://github.com/user-attachments/assets/bb907543-c792-47d3-a7fe-ccaed9e8d0af" alt="Circuit 3" width="400"/>
       
 <br>
 
@@ -164,9 +164,9 @@ February 17th, 2025
    Change the DMM settings and lead connections to measure current, then record the current through the LED in the circuit for the switch ON and OFF.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ee69acd4-0dfe-4854-847b-8f4fff4db869" alt="Assembled parallel resistor circuit" width="400">
+  <img src="https://github.com/user-attachments/assets/ee69acd4-0dfe-4854-847b-8f4fff4db869" alt="Measuring Voltage Across" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Transistor controlled motor current and speed schematic. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 9: Measuring voltage across a resistor using the DMM. </figcaption>
 </div>
 
 
@@ -178,11 +178,22 @@ February 17th, 2025
    Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM, measure the voltage at each point with respect to ground (T4) and record the results in a table. Make sure to record each voltage for the switch ON and the switch OFF. Try to measure as close to the resistor terminal as possible to avoid any small voltage drops.
    Also measure the voltage across each component in the circuit, such as R1, LED, R2, and the switch and record in the table. Use the voltages to calculate the currents through the various resistors.
    Change the DMM settings and lead connections to measure current, then record the current through the LED and R2 in the circuit for the switch ON and OFF.
+
+
+<div/>
+   
 **Part 1.3: Controlling LED Current Using a Transistor Circuit**
 
    1. **Voltage and Current Measurements:**
   Using the circuit created in objective 1.3 of the assembly procedures, connect R3 and T1 to the 5VDC output and the other end of R3 and T4 to ground using the alligator clips.
-   Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM connected to T2, measure the voltage while adjusting the 1 kΩ potentiometer. Once the voltage at T2 is not changing, you can declare your minimum and maximum LED brightnesses. Additionally, identify two intermediate (midpoint) voltges between the dim and bright LED settings.
+   Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM connected to T2, measure the voltage while adjusting the 1 kΩ potentiometer. Once the voltage at T2 is not changing, you can declare your minimum and maximum LED brightnesses. Additionally, identify two intermediate (midpoint) voltges between the dim and bright LED settings. The method used for adjusting the potentiometer is shown in Figure 10 below.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ff4316f2-4f2a-442a-a28a-cd46efaa3b5c" alt="Measuring Voltage Across" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 9: Measuring voltage across a resistor using the DMM. </figcaption>
+</div>
+
    For each potentiometer setting, measure the voltage at each test point and the voltage across each component (R1, LED, R2). Try to measure as close to the resistor terminal as possible to avoid any small voltage drops. Record all values in the table.
    Change the DMM settings and lead connections to measure current, then record the current through the LED and R2 in the circuit for each potentiometer setting. Using the LED current (Ic) and the R2 current (Ib), calculate the gain.
    
