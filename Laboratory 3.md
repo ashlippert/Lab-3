@@ -29,10 +29,7 @@ February 17th, 2025
 
 **Objective: Learn to use Diodes, LEDs, and transistors in a basic circuit**
 
-1. **Measuring Resistors**  
-   The actual resistance values of the resistors used in the circuits were measured with the DMM and recorded in a table before assembly. This was done to ensure each resistor was in tolerance range.
-
-2. **LED Directly Connected to a Switch**
+1. **LED Directly Connected to a Switch**
 
    The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
 
@@ -54,7 +51,7 @@ February 17th, 2025
 
 <br>
 
-3. **LED Driven by a Transistor**
+2. **LED Driven by a Transistor**
 
    A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
 
@@ -85,7 +82,7 @@ February 17th, 2025
 
 <br>
 
-4. **LED Current Controlled Using a Transistor**
+3. **LED Current Controlled Using a Transistor**
 
    A potentiometer is introduced to control the base current of the transistor, effectively modulating the LED brightness. By adjusting the resistance, the base current changes, influencing the collector current and thus the LED’s brightness. This circuit demonstrates how transistors can be used for more than just on-off switching, they can also provide variable control.
 
@@ -157,40 +154,45 @@ February 17th, 2025
 
    For this part of the experiment, the resistance each resistor was measured using a Digital Multimeter (DMM) and the results were compared to the expected values based on the resistor color codes. We recorded the expected resistance, the acceptable tolerance range, and the measured resistance in a table. Any resistors that fell outside the expected range were noted.
 
-**DCPS Output Verification:**
-   
-   To verify the voltage output of the DCPS, the DMM leads were connected to the output cables of the DCPS. Red was connected to red, and black was connected to black.
-   The measured voltage output was then compared to the expected output voltage manually set on the DCPS.
-
-**Part 1: Series Circuit**
+**Part 1.1: LED Directly Connected by a Switch**
 
 1. **Voltage and Current Measurements:**
    
-   Using the soldered circuit created in objective 1 of the assembly procedures, connect the terminals of R1 and R3 to the DC Power Supply using the alligator clips. Ensure black is connected to - terminal (ground) and red is connected to the + terminal.
-   Once connected, set the DCPS to 10 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM measure the voltage drop across each resistor and record the results in a table.
-   Change the DMM settings and lead connections to measure current, then record the current in the circuit.
+   Using the circuit created in objective 1.1 of the assembly procedures, connect the terminal of R1 and the switch to the DC Power Supply using the alligator clips. Ensure black is connected to - terminal (ground) and red is connected to the + terminal.
+   Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM, measure the voltage at each point with respect to ground (T4) and record the results in a table. Attach the black (COMMON) multimeter probe to a point close to the switch terminal. Be sure to record each voltage for the switch ON and the switch OFF.
+   Try to measure as close to the resistor terminal as possible to avoid any small voltage drops. Additionally, measure the voltage across each component in the circuit (R1, LED, switch) and record in the table. See Figure 9 for how voltage across each component was measured. Use the measured voltages to calculate the currents through each resistor.
+   Change the DMM settings and lead connections to measure current, then record the current through the LED in the circuit for the switch ON and OFF.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ee69acd4-0dfe-4854-847b-8f4fff4db869" alt="Assembled parallel resistor circuit" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Transistor controlled motor current and speed schematic. </figcaption>
+</div>
 
 
-**Part 2: Parallel Circuit**
+**Part 1.2: LED Driven by a Transistor Circuit**
 
-2.1. **Kirchhoff's Current Law (KCL):**
+1. **Voltage and Current Measurements:**
+ 
+  Using the circuit created in objective 1.2 of the assembly procedures, connect the point T7 to the 5VDC output and T1 to the main output using the alligator clips.
+   Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM, measure the voltage at each point with respect to ground (T4) and record the results in a table. Make sure to record each voltage for the switch ON and the switch OFF. Try to measure as close to the resistor terminal as possible to avoid any small voltage drops.
+   Also measure the voltage across each component in the circuit, such as R1, LED, R2, and the switch and record in the table. Use the voltages to calculate the currents through the various resistors.
+   Change the DMM settings and lead connections to measure current, then record the current through the LED and R2 in the circuit for the switch ON and OFF.
+**Part 1.3: Controlling LED Current Using a Transistor Circuit**
 
-   Use the circuit assembled in step 2 of objective 2 of the assembly procedures. Connect the positive terminal of the circuit to the red (+) lead and the negative terminal to the black (-) lead of the DCPS.
-   Once connected, set the DCPS to provide 12 V and press the OUTPUT ON button to begin delivering power to the circuit.
-   Using the DMM in series with the elements of interest in current mode, measure the current through all resistors in the circuit and record the values in a table.
-  
-2.2. **Kirchhoff's Voltage Law (KVL):**
+   1. **Voltage and Current Measurements:**
+  Using the circuit created in objective 1.3 of the assembly procedures, connect R3 and T1 to the 5VDC output and the other end of R3 and T4 to ground using the alligator clips.
+   Once connected, set the DCPS to 5 V and press the OUTPUT ON button to begin delivering power to the circuit. Next, using the DMM connected to T2, measure the voltage while adjusting the 1 kΩ potentiometer. Once the voltage at T2 is not changing, you can declare your minimum and maximum LED brightnesses. Additionally, identify two intermediate (midpoint) voltges between the dim and bright LED settings.
+   For each potentiometer setting, measure the voltage at each test point and the voltage across each component (R1, LED, R2). Try to measure as close to the resistor terminal as possible to avoid any small voltage drops. Record all values in the table.
+   Change the DMM settings and lead connections to measure current, then record the current through the LED and R2 in the circuit for each potentiometer setting. Using the LED current (Ic) and the R2 current (Ib), calculate the gain.
+   
 
-   Use the same circuit assembly from step 2 of objective 2 of the assembly procedures. With the DMM, measure the voltage acrosss each resistor in the circuit and record the values in a table. Then, calculate the expected voltage drop for each resistor using Ohm's Law and the currents previously recorded.
-   To calculate expected voltage drop, use the formula:
-   <div align="center"> V = I*R </div>
+**Part 2.1: Controlling Motor Current and Speed Using a Transistor**
 
-2.3. **Thevenin and Norton:**
-
-   Use the circuit assembly from step 3 of objective 2 of the assembly procedures. Once assembled, use the DMM to measure the voltage across R4. This voltage is the same as that applied to the "load" and can also be expressed as VTH.
-   Set up the DMM to measure DC current, then connect the leads to the terminals of R4 to act as a short circuit. Measure the current IN and record the value observed.
-   Remove the DMM leads from the circuit and replace with one wire connecting the disconnected end of R1 to the disconnected end of R4. Return the DMM to the Ohm meter setting and measure the equivalent resistance for the passive circuit.
-
+   Use the circuit assembly from of objective 2.1 of the assembly procedures. Once assembled, use ta screwdriver too adjust the voltage level of the 1kΩ potentiometer. Connect the DMM to T2, and if the voltage is not changing identify these points as the minimum and maximum speed of the motor. Additionally, choose two intermediate voltages (midpoints) between the minimum and maximum motor speed.
+   For each potentiometer setting, measure the voltage at each test point and the voltage across each component (R1, M1, R2). Try to measure as close to the resistor terminal as possible to avoid any small voltage drops. Record all values in the table.
+   Change the DMM settings and lead connections to measure current, then record the current through the M1 and R2 in the circuit for each potentiometer setting. Using the motor current (Ic) and the R2 current (Ib), calculate the gain.
+   
 ## Test Results:
 
 **Table 1: Resistor Values for Soldered Circuit (Schematic 1)**
@@ -286,6 +288,3 @@ The values we calculated using circuit analysis and expected resistances complet
 
 This lab reinforced our understanding of circuit analysis by applying Kirchhoff’s laws, Ohm’s law, and Thevenin’s theorem. We built and tested series and parallel circuits, taking voltage and current measurements to compare with theoretical values. While most results aligned with expectations, some discrepancies were likely due to measurement errors or resistor tolerances. Additionally, soldering the series circuit provided valuable hands-on experience. Overall, the lab improved both our analytical and practical skills in circuit design and testing.
 
-## Sources:
-
-Ultimate Guide to Electronic Soldering. (n.d.). Techspray. https://www.techspray.com/ultimate-guide-to-electronic-soldering?srsltid=AfmBOoprXNhd-Lety6MHBoPSrOQDy-SjmZflQmQewodzb_W0G7A7Jpsk
