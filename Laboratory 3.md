@@ -11,7 +11,7 @@ February 17th, 2025
 ## Introduction
    Transistors are essential in modern electronics, with Bipolar Junction Transistors commonly used for amplification and switching. This lab focuses on understanding BJTs by using the TIP 31C transistor as a switch to control current through an LED and a motor. We will explore its different operating modes and how factors like gain (β) affect performance.
 
-Additionally, we will examine diodes, which allow current to flow in one direction, and LEDs, which emit light when current passes through them. This lab provides hands-on experience with semiconductor devices and their applications in circuit design.
+   Additionally, we will examine diodes, which allow current to flow in one direction, and LEDs, which emit light when current passes through them. This lab provides hands-on experience with semiconductor devices and their applications in circuit design.
 
 ## Materials
 1. Resistors: 1kΩ, 2.2 Ω, 270 Ω, 1 kΩ
@@ -30,11 +30,11 @@ Additionally, we will examine diodes, which allow current to flow in one directi
 **Objective: Learn to use Diodes, LEDs, and transistors in a basic circuit**
 
 1. **Measuring Resistors**  
-The actual resistance values of the resistors used in the circuits were measured with the DMM and recorded in a table before assembly. This was done to ensure each resistor was in tolerance range.
+   The actual resistance values of the resistors used in the circuits were measured with the DMM and recorded in a table before assembly. This was done to ensure each resistor was in tolerance range.
 
 2. **LED Directly Connected to a Switch**
 
-The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
+   The circuit was constructed according to the schematic in Figure 1. Voltages were measured at each test point with respect to ground, ensuring accurate readings by placing the multimeter’s black probe close to the switch terminal. Ohm’s Law was used to calculate the currents through the resistor (R1), using only components with known resistance.
 
 <div align= "center">
 <img src="https://github.com/user-attachments/assets/ae1d075f-1e65-430c-be60-8a4bf0e01eb2" alt "Schematic 1" width="200"/>
@@ -56,14 +56,16 @@ The circuit was constructed according to the schematic in Figure 1. Voltages wer
 
 3. **LED Driven by a Transistor**
 
-A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
+   A new circuit was built to drive the LED using a transistor in the schematic shown in Figure 3. Voltages were measured at all test points, and currents were calculated using known resistor values. The current through the LED was compared to that of the previous circuit to analyze differences.  
 
-Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region. The schematic for constructing this circuit is shown in Figure 3.
+   Additionally, the transistor’s voltage drop was recorded and compared with the calculated expected values. The power supply was adjusted to observe changes in IC to help determine whether the transistor operated in the saturation region. The schematic for constructing this circuit is shown in Figure 3.
 
 
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/66f77f2e-4f49-4d3a-93f6-4861215dcae8" alt="Schematic 2" width="400"/>
-<br>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/66f77f2e-4f49-4d3a-93f6-4861215dcae8" alt="Schematic 2" width="400"/>
+   
+<br/>
+   
   <figcaption style="font-size: 16px; text-align: center;"> Figure 3: LED driven by transistor with a fixed current schematic. </figcaption>
 </div>
 
@@ -73,7 +75,10 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
 
    <div align="center">
   <img src="https://github.com/user-attachments/assets/dd238a1d-5742-4368-ac3d-01adf5b8a011" alt="Circuit 2" width="400"/>
+      
 <br>
+
+   
   <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Constructed circuit from Schematic 2. </figcaption>
 </div>   
 
@@ -87,9 +92,9 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
    The schematic for constructing this circuit is provided in Figure 5 below.
 
 
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/5ecb04b3-15b5-48c6-80de-66bd0e2c849e" alt="Schematic 3" width="400"/>
-<br>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/5ecb04b3-15b5-48c6-80de-66bd0e2c849e" alt="Schematic 3" width="400"/>
+<br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Controlling LED current using a transistor schematic. </figcaption>
 </div>
 
@@ -101,8 +106,8 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
    
 <br>
 
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/bec652ae-ac6a-41b0-a8bb-6392b9a5ce85" alt="Circuit 3" width="400"/>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/bec652ae-ac6a-41b0-a8bb-6392b9a5ce85" alt="Circuit 3" width="400"/>
       
 <br>
 
@@ -116,45 +121,30 @@ Additionally, the transistor’s voltage drop was recorded and compared with the
 **Objective 2: Motor Driven Circuit**
 
 
-1. **Series Circuit**
+1. **Motor Speed Control Using a Transistor**
 
-   Utilize the soldered series circuit prepared in Objective 1.
-   
-2. **Parallel Circuit**
+   In this circuit, a transistor is used to control the speed of a DC motor. Similar to the LED circuit, the transistor acts as a switch, allowing current to flow when the base is activated. A potentiometer is used to modulate the base current, thereby adjusting the motor’s speed. The diode is placed in parallel with the motor to protect against voltage spikes caused by inductive loads.
+   Schematic 4 shown below describes the construction for the transistor controlled motor circuit.
 
-   Obtain the following resistors: 4.7 kΩ (R1), 6.8 kΩ (R2), 15 kΩ (R3), 220 kΩ (R5), and 2.2 kΩ (R5 = RL) and verify their resistance value using the DMM. Record the measured resistances in a table. Refer to the schematic given in Figure 4 for assembly instruction.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/db1927d1-b8ee-47f9-a5d6-02810c6a91e9" alt="Schematic 4" width="400">
+<br/>
+
+<figcaption style="font-size: 16px; text-align: center;"> Figure 7: Transistor controlled motor current and speed schematic. </figcaption>
+</div>   
+
+<br/>
+  Once assembled, the circuit should look resemble Figure 8 below.
 
    <div align="center">
-  <img src="https://github.com/user-attachments/assets/8b7ab9ec-ee73-4ae1-90cb-73f4a3801057" alt="Schematic 2" width="400">
-  <p><b>Figure 4:</b> Parallel resistor circuit schematic.</p>
+  <img src="https://github.com/user-attachments/assets/d2981ce5-c15f-4577-a524-8122d3324fc7" alt="Assembled parallel resistor circuit" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Transistor controlled motor current and speed schematic. </figcaption>
 </div>
 
 
-   No soldering is necessary for this circuit, but verification of the DCPS voltage output was performed using the DMM to ensure the voltage is within .1V of the expected output. Once assembled, the circuit should look like the following:
-
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/597d69bd-2b53-43ee-916b-f3644e0ede8e" alt="Assembled parallel resistor circuit" width="400">
-  <p><b>Figure 5:</b> Assembled parallel resistor circuit for part 2.1 and 2.2 of this lab.</p>
-</div>
-
-
-3. **Thevenin and Norton**
-
-   Thevenin’s Theorem states that all linear circuits can be expressed as a circuit with one equivalent voltage source and one equivalent resistance. To create the Thevenin equivalent circuit, remove R5 from the parallel circuit assembled in the previous step of Objective 2. The schematic for the Thevenin circuit is shown in Figure 6 below.
-
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/fbbb8eed-8e6c-4acc-805c-082b84bc9dc1" alt="Thevenin circuit" width="400">
-  <p><b>Figure 6:</b> Thevenin equivalent circuit schematic.</p>
-
-</div>
-
-
-   When assembled, the Thevenin circuit should resemble the image below.
-
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/5af5d1d8-2de2-49b8-ab32-6b469ad4e38b" alt="Assembled Thevenin circuit" width="400">
-  <p><b>Figure 5:</b> Assembled Thevenin resistor circuit for part 2.3 of this lab.</p>
-</div>
+<br>
 
 ## Test Equipment
 
