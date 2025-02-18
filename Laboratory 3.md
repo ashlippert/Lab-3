@@ -303,7 +303,34 @@ February 17th, 2025
 
 ## Discussion:
 
-Seth
+
+**Discussion Question 1: How does the current through the LED compare between circuits 1 and 2?**
+
+The current through the LED was nearly the same in both circuits. In Circuit 1, where the LED was directly connected to the switch, the measured current (Ic) was 0.012 A when the switch was on. In Circuit 2, where the LED was driven by a transistor, the current was also 0.012 A. This means that adding the transistor didn’t significantly change the LED current. 
+
+
+
+**Discussion Question 2: How does your measured VCE compare to the one listed in the datasheet? Are we in the saturation region?**
+
+The TIP31C datasheet lists a maximum saturation voltage (VCE(sat)) of 1.2V, but our measured value was 0.013V when the LED was on. Since this is much lower than the datasheet value, it indicates that the transistor is in deep saturation. A transistor in saturation acts like a closed switch, meaning there is very little voltage drop between the collector and emitter. To confirm this, we adjusted the power supply slightly and saw that the collector current (Ic) remained mostly the same. This behavior is expected when the transistor is fully saturated.
+
+
+
+**Discussion Question 3: What happens to IC as you change the voltage?**
+
+As the base voltage (T6) increased, the current through the LED (Ic) also increased, making the LED brighter. At 0.459V, the collector current was 0.00007 A, which barely lit the LED. When the base voltage increased to 0.518V, the collector current rose to 0.00045 A, and the LED appeared much brighter. This shows that even a small change in base voltage can lead to a noticeable difference in current, which is a key feature of transistor operation. Essentially, the transistor is amplifying the small input signal at the base to control a larger current through the LED.
+
+
+
+**Discussion Question 4: What is the voltage drop (VCE) across the transistor (Q1) when the motor is in the fast setting? How does this compare with the LED circuit?**
+
+When the motor was running at full speed, the measured VCE was 1.25V. This is quite a bit higher than the VCE measured in the LED circuit, which was only 0.013V. The reason for this difference is that the motor requires more current than the LED, which affects how the transistor operates. In the LED circuit, the transistor was in deep saturation with a very low VCE. In the motor circuit, the transistor was likely still in saturation but with a higher voltage drop due to the increased load.
+
+
+
+**Discussion Question 5: How much current is going through the motor in the fast setting? How does this compare to the LED circuit? Could the switch alone support the motor?**
+
+At full speed, the motor drew 0.0815 A, which is much more than the 0.012 A needed for the LED. The gain (Ic/Ib) for the motor circuit was around 281, while in the LED circuit, it was about 45. This difference shows that the motor required significantly more current than the LED. Since the switch barely handled the LED’s current, it definitely wouldn’t be able to power the motor directly. The transistor switch is necessary here because it allows the motor to pull a higher current from the power supply while still being controlled by a low-power input.
 
 ## Conclusion:
 
